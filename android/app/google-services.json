@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "923569801888",
+    "project_id": "pocket-accountant-liberia",
+    "storage_bucket": "pocket-accountant-liberia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923569801888:android:d140311ef8d9249eab17c5",
+        "android_client_info": {
+          "package_name": "com.example.pocket_accountant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApToUjuK2peFseotTXgE40w3-komlgaGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
