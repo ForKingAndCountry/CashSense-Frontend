@@ -172,7 +172,7 @@ class DashboardScreen extends ConsumerWidget {
                   if (pendingDebt > 0) ...[
                     const SizedBox(height: 4),
                     Text(
-                      'Pending debts: ${currency.format(amount: pendingDebt, currency: currency.baseCurrency)}',
+                      'Pending obligations: ${currency.format(amount: pendingDebt, currency: currency.baseCurrency)}',
                       style: Theme.of(context)
                           .textTheme
                           .bodySmall

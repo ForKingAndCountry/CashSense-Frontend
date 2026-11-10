@@ -127,7 +127,7 @@ class ReportGenerator {
     if (pendingDebts.isNotEmpty) {
       lines.addAll([
         '',
-        _row(['Outstanding debts (all time)', 'Amount ($base)']),
+        _row(['Outstanding obligations (all time)', 'Amount ($base)']),
         _row(['People owe you', owedToYou.toStringAsFixed(2)]),
         _row(['You owe others', youOwe.toStringAsFixed(2)]),
       ]);

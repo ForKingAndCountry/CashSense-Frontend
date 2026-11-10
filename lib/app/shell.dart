@@ -81,7 +81,7 @@ class AppShell extends ConsumerWidget {
                 const SizedBox(width: 40),
                 _NavItem(
                   icon: Icons.people_outline,
-                  label: 'Debts',
+                  label: 'Obligations',
                   selected: index == 2,
                   onTap: () => _goForIndex(context, 2),
                 ),
