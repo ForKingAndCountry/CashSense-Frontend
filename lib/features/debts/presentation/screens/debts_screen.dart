@@ -42,7 +42,7 @@ class _DebtsScreenState extends ConsumerState<DebtsScreen> with SingleTickerProv
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
             child: Row(
               children: [
-                Text('Debts', style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+                Text('Obligations', style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
                 const Spacer(),
                 IconButton(onPressed: _openAddDebt, icon: const Icon(Icons.add)),
               ],
@@ -67,7 +67,7 @@ class _DebtsScreenState extends ConsumerState<DebtsScreen> with SingleTickerProv
                 unselectedLabelColor: Colors.black54,
                 tabs: const [
                   Tab(text: 'I Owe'),
-                  Tab(text: 'Owed To Me'),
+                  Tab(text: 'Obligations to Me'),
                 ],
               ),
             ),
@@ -121,7 +121,7 @@ class _DebtList extends ConsumerWidget {
     if (items.isEmpty) {
       return Center(
         child: Text(
-          'No debts yet.',
+          'No obligations yet.',
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.black54),
         ),
       );
@@ -192,12 +192,12 @@ class _AddDebtSheetState extends State<_AddDebtSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Add Debt', style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+          Text('Add Obligation', style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
           const SizedBox(height: 12),
           SegmentedButton<DebtType>(
             segments: const [
               ButtonSegment(value: DebtType.owed, label: Text('I Owe')),
-              ButtonSegment(value: DebtType.lent, label: Text('Owed To Me')),
+              ButtonSegment(value: DebtType.lent, label: Text('Obligations to Me')),
             ],
             selected: {_type},
             onSelectionChanged: (s) => setState(() => _type = s.first),

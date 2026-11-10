@@ -80,7 +80,7 @@ class _AllocationPlanScreenState extends ConsumerState<AllocationPlanScreen> {
               ),
               _PercentField(
                 controller: _debt,
-                label: 'Debt repayment',
+                label: 'Obligation repayment',
                 icon: Icons.credit_card,
                 onChanged: () => setState(() => _rebuildTick++),
               ),

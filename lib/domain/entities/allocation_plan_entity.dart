@@ -31,7 +31,7 @@ class AllocationPlanEntity {
 
   Map<String, double> splitsFor(double income) => {
         'Untouchable Savings': income * percentSavings / 100,
-        'Debt Repayment': income * percentDebt / 100,
+        'Obligation Repayment': income * percentDebt / 100,
         'Future Investment': income * percentInvestment / 100,
         'Guilt-Free Spending': income * percentGuiltFree / 100,
       };
